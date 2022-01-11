@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+div {
+  outline: red;
+  outline-style: dotted;
+  margin-bottom: 200px;
+}
+
+.landing {
+  box-sizing: content-box;
+
+  text-align: center;
+  background-image: url(assets/birb.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  margin: 0;
+}
+
+.landing h1 {
+  padding: 300px 0;
+  color: bisque;
+
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.landing img {
+  align-self: center;
+  height: 100px;
+}
