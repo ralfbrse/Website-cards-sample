@@ -8,22 +8,14 @@ body {
   display: flex;
   flex-direction: column;
   background: rgb(67, 83, 36);
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
 }
 
 div {
   margin: 0;
   height: 90vh;
-}
-
-h1 {
-  text-align: center;
-  color: white;
-  font-size: 8vmax;
-  margin: 30vh 10vw;
-  font-family: "Merriweather", serif;
-}
-
-#landing {
   align-content: center;
 
   display: flex;
@@ -31,37 +23,45 @@ h1 {
   justify-content: center;
   align-items: center;
 
-  transition: 0.2s;
-}
+  position: sticky;
+  top: 0%;
 
-#scrolldown {
-  background: none;
   border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-
-  padding-right: 60px;
-  padding-left: 60px;
-
-  margin-bottom: 90px;
-  margin-top: auto;
+  box-shadow: 0px 9px 20px 20px black;
 }
 
-#scrolldown img {
-  width: auto;
-  height: 10vh;
-  background: transparent;
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 13vw;
+  margin: 10px 2vw;
+  font-family: "DM Serif Display", serif;
+  font-weight: lighter;
 }
 
-#spacer {
-  height: 300vh;
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2vmax;
+  color: grey;
 }
 
 #content {
   background-color: cornsilk;
+
+  flex-wrap: nowrap;
+
+  justify-content: flex-start;
 }
 
 #content h1 {
   color: black;
+  font-size: 6vmax;
+}
+
+#card-1 {
+  background-color: #faa916;
+}
+
+#card-2 {
+  background-color: #6d676e;
 }

@@ -1,3 +1,3 @@
-function scrollDownPage() {
-  document.getElementById("content").scrollIntoView();
+function scrollUp() {
+  document.getElementById("landing").scrollTop = 0;
 }
