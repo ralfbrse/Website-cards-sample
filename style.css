@@ -2,36 +2,33 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  align-content: center;
+
   background: rgb(67, 83, 36);
   flex-wrap: nowrap;
-  align-content: center;
-  justify-content: flex-start;
+
+  height: fit-content;
 }
 
 div {
   margin: 0;
-  height: 90vh;
-  align-content: center;
+  height: 100vh;
 
+  /*alignment*/
   display: flex;
   flex-direction: column;
+  align-content: center;
   justify-content: center;
   align-items: center;
-
-  position: sticky;
-  top: 0%;
-
-  border: none;
-  box-shadow: 0px 9px 20px 20px black;
 }
 
 h1 {
-  text-align: center;
   color: white;
   font-size: 13vw;
   margin: 10px 2vw;
@@ -45,23 +42,24 @@ p {
   color: grey;
 }
 
-#content {
-  background-color: cornsilk;
+#holder {
+  width: 100%;
+  height: fit-content;
 
-  flex-wrap: nowrap;
-
-  justify-content: flex-start;
+  scroll-snap-type: y mandatory;
 }
 
-#content h1 {
-  color: black;
-  font-size: 6vmax;
+.card {
+  border: none;
+  box-shadow: 0px 9px 20px 20px black;
+  position: sticky;
+  top: 0%;
+  scroll-snap-align: start;
 }
 
 #card-1 {
   background-color: #faa916;
 }
-
 #card-2 {
   background-color: #6d676e;
 }
