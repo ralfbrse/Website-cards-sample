@@ -11,7 +11,6 @@ body {
   align-content: center;
 
   background: rgb(67, 83, 36);
-  flex-wrap: nowrap;
 
   height: fit-content;
 }
@@ -73,11 +72,6 @@ p {
   position: sticky;
   top: 0%;
   scroll-snap-align: start;
-
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
 }
 
 #card-2 p {
@@ -86,13 +80,14 @@ p {
 
 #socials {
   background-color: aliceblue;
+  min-height: fit-content;
   height: 20vh;
   width: 100%;
+  flex-direction: row;
 }
 
 .socials * {
-  margin: 20px;
   width: auto;
-  height: 15vh;
-  font-size: 3vw;
+  height: 6vh;
+  font-size: 25px;
 }
