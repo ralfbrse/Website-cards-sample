@@ -92,6 +92,13 @@ p {
   font-size: 25px;
 }
 
+#card-1 {
+  background-color: #faa916;
+}
+#card-2 {
+  background-color: #6d676e;
+}
+
 #card-3 {
   background-color: black;
 }
